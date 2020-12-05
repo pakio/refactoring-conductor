@@ -29,7 +29,7 @@ func TestTwoFunctionStatements(t *testing.T) {
 	vbscript.CognitiveComplexity = internal.Read(filename, &vbscript)
 
 	if expectedCognitiveComplexity != vbscript.CognitiveComplexity {
-		t.Errorf("wrong output: got %v, expected %v", vbscript.CognitiveComplexity, expectedCognitiveComplexity)
+		t.Errorf("wrong output, : got %v, expected %v", vbscript.CognitiveComplexity, expectedCognitiveComplexity)
 	}
 
 	if expectedFirstCognitiveComplexity != vbscript.Functions[0].CognitiveComplexity {
